@@ -1,4 +1,4 @@
-## 初步完成E_μ
+## 1.初步完成E_μ
 
 E_μ的结果是一张二维表，以roughness和μ作为两个维度。
 
@@ -8,20 +8,26 @@ E_μ的结果是一张二维表，以roughness和μ作为两个维度。
 
 [代码在此](https://github.com/yindec/Kulla-Conty/commit/0de8a2eda82846cda44cce2b8e88971b2f06be75)
 
-##  预计算E_avg
+##  2.预计算E_avg
 
 [ImportanceSampleGGX](https://learnopengl-cn.github.io/07%20PBR/03%20IBL/02%20Specular%20IBL/#hdr)
 
 
 [代码在此](https://github.com/yindec/Kulla-Conty/commit/913d8a6958325f053206c2fd5c8be78b03ed24b6)
 
-## 实时渲染
+## 3.实时渲染
 
-### 没有考虑能量损失
+### 3.1 没有考虑能量损失
 
 渲染结果![](code/assets/RTR1.png)
 
 因为还没更改fms的结果，使得`BRDF=Fmicro + 1.0`;也就成了白色。
 
-[代码在此](https://github.com/yindec/GAMES202/commit/78d88f59843d80e2d05d2a4c7818984262495505)
+[代码在此](https://github.com/yindec/Kulla-Conty/commit/72ad09ad910359b32a1cf76f4e2f82f3e3302b0e)
 
+### 3.2 考虑能量损失
+
+渲染结果![](code/assets/RTR_fms.png)
+
+
+[代码在此](https://github.com/yindec/GAMES202/commit/b70ac47607f5aa3d6da295e1d849ae8187f8c402)
